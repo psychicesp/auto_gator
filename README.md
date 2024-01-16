@@ -14,7 +14,7 @@ example_gator = AutoGator(
 ```
 
 ### Adding FMOs
-(note:  I couldn't actually find good example data with multiple example FMOs which were god candidates for this method.  This wasn't actually run with a 'CD3' or 'CD8' FMO,just showing as example  Example outputs were shown as )
+(note:  I couldn't actually find good example data with multiple example FMOs which were god candidates for this method.  This wasn't actually run with a 'CD3' or 'CD8' FMO,just showing as example)
 
 ```python
 example_gator.add_fmo(
