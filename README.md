@@ -1,4 +1,5 @@
-# Using AutoGator
+# AutoGator
+### A simple module for automaticaly gating flow cytometry samples given only FMOs. No control sample required (if more than one FMO is supplied)
 ![](img/AutoGator.png)
 
 ## Quickstart
@@ -35,7 +36,7 @@ example_gator.add_fmo(
 
 ### Gating Unknown Sample
 ```python
-imort FlowCal
+import FlowCal
 
 unknown_sample= FlowCal.io.FCSData(unknown_location) # We first need a FlowCal object of the sample to gate
 
