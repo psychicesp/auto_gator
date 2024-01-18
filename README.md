@@ -113,7 +113,7 @@ cd4_boundry = spleen_gator.get_gate_boundry(
 )
 
 print(cd4_boundry['channels'])
-cd4_boundry['contour'][0].shape
+print(cd4_boundry['contour'][0].shape)
 # Output:
 # ['SSC-A', 'BV786-A']
 # (500, 2)
@@ -121,7 +121,7 @@ cd4_boundry['contour'][0].shape
 
 ## Untested functionality: Creating a control sample if one is not given
 
-##### **Note:** I have written in the ability to create a control sample if one is not given but multiple FMOs are.  It does this by amalgamating all FMOs into a single sample. In theory this should work, but I did not find a good example dataset to test this on, so in attition to debugging the concept the code itself may contain some initial errors that I can't have seen without proper testing
+##### **Note:** I have written in the ability to create a control sample if one is not given but multiple FMOs are.  It does this by amalgamating all FMOs into a single sample. In theory this should work, but I did not find a good example dataset to test this on, so in addition to debugging the concept the code itself may contain some initial errors that I can't have seen without proper testing
 
 This is achieved with the following:
 
