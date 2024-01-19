@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+dynamic = ["dependencies"]
+name = "AutoGator"
+version = "0.01"
+requires-python = ">= 3.8"
+
+classifiers = ["Development Status :: 3 - Beta"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
