@@ -70,7 +70,7 @@ class AutoGator:
     def _synthesize_control(
        self
     ): 
-        control = list(self.fmos).values()[0] # Hopefully the first fmo is representative
+        control = list(self.fmos.values())[0] # Hopefully the first fmo is representative
         # __array_wrap__ is a FlowCal method which presumably wraps a numpy array returning the FCSData object
         #       This seems to apply all appropriate attributes from the source object, so its a good way to concatenate the data (I hope?)
         
@@ -109,7 +109,7 @@ class AutoGator:
             
             if self.scale_factor:
                 positive_contour[0] = scale_polygon(
-                    polygon= positive_contour[0],
+                    vertices= positive_contour[0],
                     scale_factor= self.scale_factor
                 )
             
